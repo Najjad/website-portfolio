@@ -6,19 +6,19 @@
             name: "Jaspero",
             icon: "fa-solid fa-cart-shopping",
             description:
-                "le skibidi rizz",
+                "",
         },
         {
             name: "WebForgerStudio",
             icon: "fa-solid fa-list-check",
             description:
-                "smegma smegma smegma",
+                "",
         },
         {
             name: "PROJECT_TITLE",
             icon: "fa-solid fa-diagram-project",
             description:
-                "here is how to jelq",
+                "",
         },
     ];
 
@@ -64,7 +64,7 @@
                 <div
                     class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
                 />
-                <a href="https://github.com" target="_blank">
+                <a href="https://github.com/Najjad" target="_blank">
                     <h4 class="relative z-9">Get in touch</h4>
                 </a>
             </button>
@@ -244,6 +244,5 @@
         <div class="mx-auto -mt-12 italic sm:hidden opacity-50">
             <p>Scroll to see more &rarr;</p>
         </div>
-        <p class="mx-auto">So why not invest?</p>
     </section>
 </main>
