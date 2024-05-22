@@ -27,17 +27,17 @@
         metric: "Real-world Experience",
         name: "Node.js, Python, Java, and Wordpress Experience",
         description:
-            "With  hands-on experience in Node.js, Python, Java, and Wordpress, I have acquired a deep understanding of these technologies. My proficiency extends beyond mere familiarity; I have successfully implemented complex solutions and tackled diverse challenges in real-world projects.",
+            "I've gained hands-on experience with Node.js, Python, Java, and WordPress. I'm not just familiar with these technologies; I've used them to build real projects and solve complex problems.",
     },
     {
         name: "Product Design & UX Enthusiast",
         description:
-            "As a product design and UX enthusiast, I am passionate about crafting exceptional user experiences. I thrive on the opportunity to blend creativity with functionality, ensuring that every design decision enhances user satisfaction. My dedication to continuous learning keeps me abreast of the latest design trends and methodologies.",
+            "I'm passionate about product design and user experience (UX). I enjoy creating designs that are both visually appealing and functional, always with the user in mind. I stay updated with the latest design trends to keep my skills sharp.",
     },
     {
         name: "Effective Communicator",
         description:
-            "Communication is the cornerstone of my approach to collaboration. I excel in conveying complex ideas with clarity and precision, fostering open dialogue, and actively listening to diverse perspectives. By prioritizing transparent and constructive communication, I forge strong relationships and drive successful outcomes in any team environment.",
+            "Clear and effective communication is my strength. I can explain complex ideas in simple terms, foster open discussions, and actively listen to others. Good communication helps me build strong team relationships and achieve great results.",
     },
 ];
 </script>
