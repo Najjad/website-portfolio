@@ -104,7 +104,26 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n	<meta charset="utf-8" />\r\n	<!--<link rel="icon" href="../static/favicon.ico" /> -->\r\n	<link rel="preconnect" href="https://fonts.googleapis.com">\r\n	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\r\n	<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"\r\n		integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="\r\n		crossorigin="anonymous" referrerpolicy="no-referrer"><\/script>\r\n	<link\r\n		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"\r\n		rel="stylesheet">\r\n	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"\r\n		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="\r\n		crossorigin="anonymous" referrerpolicy="no-referrer" />\r\n	<meta name="viewport" content="width=device-width" />\r\n	' + head + '\r\n</head>\r\n\r\n<body data-sveltekit-preload-data="hover" class="bg-slate-950 text-white relative">\r\n	<div style="display: contents" class="relative z-[1]">' + body + '</div>\r\n\r\n	<div class="absolute min-h-screen top-0 left-0 w-full z-[-1] opacity-70">\r\n		<div id="particles-js" class="absolute inset-0" />\r\n	</div>\r\n	<script>\r\n		particlesJS.load("particles-js", "assets/particles.json", function () {\r\n			console.log("callback - particles.js config loaded");\r\n		});\r\n	<\/script>\r\n</body>\r\n\r\n</html>\r\n',
+    app: ({ head, body, assets: assets2, nonce, env }) => `<!DOCTYPE html>\r
+<html lang="en">\r
+\r
+<head>\r
+	<meta charset="utf-8" />\r
+	<!--<link rel="icon" href="../static/favicon.ico" /> -->\r
+	<title>Najjad's Portfolio</title>\r
+	<link rel="preconnect" href="https://fonts.googleapis.com">\r
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\r
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"\r
+		integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="\r
+		crossorigin="anonymous" referrerpolicy="no-referrer"><\/script>\r
+	<link\r
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"\r
+		rel="stylesheet">\r
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"\r
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="\r
+		crossorigin="anonymous" referrerpolicy="no-referrer" />\r
+	<meta name="viewport" content="width=device-width" />\r
+	` + head + '\r\n</head>\r\n\r\n<body data-sveltekit-preload-data="hover" class="bg-slate-950 text-white relative">\r\n	<div style="display: contents" class="relative z-[1]">' + body + '</div>\r\n\r\n	<div class="absolute min-h-screen top-0 left-0 w-full z-[-1] opacity-70">\r\n		<div id="particles-js" class="absolute inset-0" />\r\n	</div>\r\n	<script>\r\n		particlesJS.load("particles-js", "assets/particles.json", function () {\r\n			console.log("callback - particles.js config loaded");\r\n		});\r\n	<\/script>\r\n</body>\r\n\r\n</html>\r\n',
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -166,7 +185,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1n4awho"
+  version_hash: "1q7mgyg"
 };
 function get_hooks() {
   return {};
