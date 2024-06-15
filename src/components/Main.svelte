@@ -6,19 +6,19 @@
             name: "Jaspero",
             icon: "fa-solid fa-cart-shopping",
             description:
-                "le skibidi rizz",
+                "",
         },
         {
             name: "WebForgerStudio",
             icon: "fa-solid fa-list-check",
             description:
-                "smegma smegma smegma",
+                "",
         },
         {
             name: "PROJECT_TITLE",
             icon: "fa-solid fa-diagram-project",
             description:
-                "here is how to jelq",
+                "",
         },
     ];
 
@@ -27,17 +27,17 @@
         metric: "Real-world Experience",
         name: "Node.js, Python, Java, and Wordpress Experience",
         description:
-            "With  hands-on experience in Node.js, Python, Java, and Wordpress, I have acquired a deep understanding of these technologies. My proficiency extends beyond mere familiarity; I have successfully implemented complex solutions and tackled diverse challenges in real-world projects.",
+            "I've gained hands-on experience with Node.js, Python, Java, and WordPress. I'm not just familiar with these technologies; I've used them to build real projects and solve complex problems.",
     },
     {
         name: "Product Design & UX Enthusiast",
         description:
-            "As a product design and UX enthusiast, I am passionate about crafting exceptional user experiences. I thrive on the opportunity to blend creativity with functionality, ensuring that every design decision enhances user satisfaction. My dedication to continuous learning keeps me abreast of the latest design trends and methodologies.",
+            "I'm passionate about product design and user experience (UX). I enjoy creating designs that are both visually appealing and functional, always with the user in mind. I stay updated with the latest design trends to keep my skills sharp.",
     },
     {
         name: "Effective Communicator",
         description:
-            "Communication is the cornerstone of my approach to collaboration. I excel in conveying complex ideas with clarity and precision, fostering open dialogue, and actively listening to diverse perspectives. By prioritizing transparent and constructive communication, I forge strong relationships and drive successful outcomes in any team environment.",
+            "Clear and effective communication is my strength. I can explain complex ideas in simple terms, foster open discussions, and actively listen to others. Good communication helps me build strong team relationships and achieve great results.",
     },
 ];
 </script>
@@ -56,7 +56,7 @@
                 <span class="poppins text-violet-400">Developer</span>
             </h2>
             <p class="text-base sm:text-lg md:text-xl">
-                My <span class="text-violet-400"> favorite tech</span> includes Node.js + SvelteKit, MySQL, Java & Python!
+                My <span class="text-violet-400"> favorite tech</span> includes Node.js + Express.js, MySQL, Java & Python!
             </p>
             <button
                 class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
@@ -64,7 +64,7 @@
                 <div
                     class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
                 />
-                <a href="https://github.com" target="_blank">
+                <a href="https://github.com/Najjad" target="_blank">
                     <h4 class="relative z-9">Get in touch</h4>
                 </a>
             </button>
@@ -244,6 +244,6 @@
         <div class="mx-auto -mt-12 italic sm:hidden opacity-50">
             <p>Scroll to see more &rarr;</p>
         </div>
-        <!-- <p class="mx-auto">dk what to put here</p> -->
+        <p class="mx-auto">So why not invest?</p>
     </section>
 </main>
