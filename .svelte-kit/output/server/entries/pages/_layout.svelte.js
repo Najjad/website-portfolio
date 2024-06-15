@@ -1,6 +1,6 @@
 import { c as create_ssr_component, b as add_attribute, e as each, d as escape, v as validate_component } from "../../chunks/ssr.js";
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<footer class="py-20 sm:py-32 bg-black border-t border-solid border-violet-950 flex flex-col gap-4 sm:gap-8 justify-center items-center" data-svelte-h="svelte-ks1ar"><p class="px-4 py-2 bg-white text-slate-950 font-medium">Connect with me ↓</p> <div class="flex flex-col gap-4 items-center justify-center"> <p><b class="pr-2">Email</b> najjadzeenni19@gmail.com</p></div></footer>`;
+  return `<footer class="py-20 sm:py-32 bg-black border-t border-solid border-violet-950 flex flex-col gap-4 sm:gap-8 justify-center items-center" data-svelte-h="svelte-los8t1"><p class="px-4 py-2 bg-white text-slate-950 font-medium">Connect with me ↓</p> <div class="flex flex-col gap-4 items-center justify-center"> <p><b class="pr-2">Legal</b> 2024 Najjad Zeenni. All rights reserved.</p></div></footer>`;
 });
 const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { y } = $$props;
