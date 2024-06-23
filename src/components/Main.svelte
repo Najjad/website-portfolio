@@ -4,13 +4,13 @@
     let steps = [
         {
             name: "Jaspero",
-            icon: "fa-solid fa-cart-shopping",
+            icon: "fa-solid fa-code",
             description:
                 "",
         },
         {
             name: "WebForgerStudio",
-            icon: "fa-solid fa-list-check",
+            icon: "fa-solid fa-laptop-code",
             description:
                 "",
         },
@@ -106,7 +106,7 @@
             target="_blank"
             class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-violet-700 duration-200"
         >
-            <i class="fa-regular fa-circle-play" />
+            <i class="fa-brands fa-github" />
             <p>Check out my GitHub</p>
         </a>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10">
@@ -118,7 +118,7 @@
                     > specialized at creating high quality and cutting edge applications for mobile, desktop and web environments.
                 </p>
             </Step>
-            <Step step={steps[1]} href="https://github.com/WebForgerStudio">
+            <Step step={steps[1]} href="https://webforger.net">
                 <p>
                     <strong
                         class="text-violet-400">WebForgerStudio</strong
