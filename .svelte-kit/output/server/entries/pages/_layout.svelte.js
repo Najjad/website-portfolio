@@ -1,4 +1,5 @@
-import { c as create_ssr_component, b as add_attribute, e as each, d as escape, v as validate_component } from "../../chunks/ssr.js";
+import { c as create_ssr_component, b as add_attribute, e as each, d as escape, f as subscribe, v as validate_component } from "../../chunks/ssr.js";
+import { p as page } from "../../chunks/stores.js";
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<footer class="py-20 sm:py-32 bg-black border-t border-solid border-violet-950 flex flex-col gap-4 sm:gap-8 justify-center items-center" data-svelte-h="svelte-awlilk"><div class="flex flex-col gap-4 items-center justify-center"> <p><b class="pr-2">Legal</b> 2024 Najjad Zeenni, All Rights Reserved.</p></div></footer>`;
 });
@@ -6,7 +7,8 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { y } = $$props;
   let { tabs = [
     { name: "Employment", link: "#projects" },
-    { name: "About me", link: "#about" }
+    { name: "About me", link: "#about" },
+    { name: "Projects", link: "/projects" }
   ] } = $$props;
   if ($$props.y === void 0 && $$bindings.y && y !== void 0)
     $$bindings.y(y);
@@ -22,13 +24,20 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const app = "";
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $page, $$unsubscribe_page;
+  $$unsubscribe_page = subscribe(page, (value) => $page = value);
   let y;
   let innerHeight = 0;
+  let currentPage = "";
+  {
+    currentPage = $page.url.pathname;
+  }
+  $$unsubscribe_page();
   return `<div class="container relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen"><div${add_attribute(
     "class",
     "fixed bottom-0 w-full duration-200 flex p-10 z-[10]  pointer-events-none opacity-0",
     0
-  )}><button class="ml-auto rounded-full bg-slate-900 text-violet-400 px-3 sm:px-4 hover:bg-slate-800 cursor-pointer aspect-square grid place-items-center" data-svelte-h="svelte-i4zgfz"><i class="fa-solid fa-arrow-up"></i></button></div> ${validate_component(Header, "Header").$$render($$result, { y, innerHeight }, {}, {})} ${slots.default ? slots.default({}) : ``} ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</div> `;
+  )}><button class="ml-auto rounded-full bg-slate-900 text-violet-400 px-3 sm:px-4 hover:bg-slate-800 cursor-pointer aspect-square grid place-items-center" data-svelte-h="svelte-i4zgfz"><i class="fa-solid fa-arrow-up"></i></button></div> ${currentPage !== "/projects" ? `${validate_component(Header, "Header").$$render($$result, { y, innerHeight }, {}, {})}` : ``} ${slots.default ? slots.default({}) : ``} ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</div> `;
 });
 export {
   Layout as default

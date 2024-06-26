@@ -1,32 +1,48 @@
 <script>
+    import ProjectCard from '../../components/Projects.svelte';
 
-    let name = "ballsacks"
+    let projects = [
+        {
+            title: 'Project One',
+            description: 'Description of Project One',
+            image: '/images/project-one.jpg',
+            link: 'https://example.com/project-one'
+        },
+        {
+            title: 'Project Two',
+            description: 'Description of Project Two',
+            image: '/images/project-two.jpg',
+            link: 'https://example.com/project-two'
+        },
+        // Add more projects as needed
+    ];
 </script>
 
-<main class="flex flex-col flex-1 p-4">
-    <h1>here's ma header</h1>
-    
-    <section
-        id="introPage"
-        class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14"
-    >
-        <div
-            class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
-        ></div>
-        
-    </section>
-    
-
-
-    <p> this is where ill place my projectts</p>
-
-
-    <section class="py-20 lg:py-32 flex flex-col gap-24" id="projects">
-        <div class="flex flex-col gap-2 text-center"></div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10">
-            <div></div>
-            <div></div>
-        </div>
-    </section>
-    
+<main class="projects-container">
+    <h1 class="projects-title">My Projects</h1>
+    <div class="projects-grid">
+        {#each projects as project}
+            <ProjectCard
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                link={project.link}
+            />
+        {/each}
+    </div>
 </main>
+
+<style>
+    .projects-container {
+        padding: 16px;
+    }
+    .projects-title {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 16px;
+    }
+</style>
