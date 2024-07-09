@@ -3,15 +3,21 @@
     export let description;
     export let image;
     export let link;
+    export let genre;
 </script>
 
 <div class="project-card">
     <img src={image} alt={title} class="project-image" />
     <div class="project-content">
+        <h2>{genre}</h2>
         <h3>{title}</h3>
         <p>{description}</p>
         <a href={link} target="_blank" class="project-link">View Project</a>
     </div>
+</div>
+
+<div class="genre">
+
 </div>
 
 <style>

@@ -146,6 +146,11 @@
         <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">
             
         </p>
+        <div class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0">
+            <h5 class="font-semibold text-2xl sm:text-3xl md:text-4xl">     
+                
+            </h5>
+        </div>
         <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
             {#each benefits as benefit, index}
                 <!-- <div class="flex flex-col gap-2 mx-auto">

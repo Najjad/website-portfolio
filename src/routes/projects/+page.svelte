@@ -1,18 +1,21 @@
 <script>
+    //gamedev, business, personal
     import ProjectCard from '../../components/Projects.svelte';
-
+    let genres = {'BS':'Business', 'PER':'Personal', 'GD':'GameDev'}
     let projects = [
         {
-            title: 'Project One',
-            description: 'Description of Project One',
+            title: 'WebForger Studio',
+            description: 'Started a web development business',
             image: '/images/project-one.jpg',
-            link: 'https://example.com/project-one'
+            link: 'https://webforger.net',
+            genre: genres['BS']
         },
         {
-            title: 'Project Two',
-            description: 'Description of Project Two',
+            title: 'Efficient Crypto Miner',
+            description: 'Developed a method of mining crypto efficiently',
             image: '/images/project-two.jpg',
-            link: 'https://example.com/project-two'
+            link: 'https://github.com/project-two',
+            genre: genres['PER']
         },
         // Add more projects as needed
     ];
@@ -27,6 +30,7 @@
                 description={project.description}
                 image={project.image}
                 link={project.link}
+                genre={project.genre}
             />
         {/each}
     </div>
