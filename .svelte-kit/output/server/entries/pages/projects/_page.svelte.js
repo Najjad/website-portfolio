@@ -9,6 +9,7 @@ const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   let { description } = $$props;
   let { image } = $$props;
   let { link } = $$props;
+  let { genre } = $$props;
   if ($$props.title === void 0 && $$bindings.title && title !== void 0)
     $$bindings.title(title);
   if ($$props.description === void 0 && $$bindings.description && description !== void 0)
@@ -17,8 +18,10 @@ const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     $$bindings.image(image);
   if ($$props.link === void 0 && $$bindings.link && link !== void 0)
     $$bindings.link(link);
+  if ($$props.genre === void 0 && $$bindings.genre && genre !== void 0)
+    $$bindings.genre(genre);
   $$result.css.add(css$1);
-  return `<div class="project-card svelte-19cgbkz"><img${add_attribute("src", image, 0)}${add_attribute("alt", title, 0)} class="project-image svelte-19cgbkz"> <div class="project-content svelte-19cgbkz"><h3>${escape(title)}</h3> <p>${escape(description)}</p> <a${add_attribute("href", link, 0)} target="_blank" class="project-link svelte-19cgbkz">View Project</a></div> </div>`;
+  return `<div class="project-card svelte-19cgbkz"><img${add_attribute("src", image, 0)}${add_attribute("alt", title, 0)} class="project-image svelte-19cgbkz"> <div class="project-content svelte-19cgbkz"><h2>${escape(genre)}</h2> <h3>${escape(title)}</h3> <p>${escape(description)}</p> <a${add_attribute("href", link, 0)} target="_blank" class="project-link svelte-19cgbkz">View Project</a></div></div> <div class="genre" data-svelte-h="svelte-yg0u0o"></div>`;
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
@@ -26,18 +29,25 @@ const css = {
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let genres = {
+    "BS": "Business",
+    "PER": "Personal",
+    "GD": "GameDev"
+  };
   let projects = [
     {
-      title: "Project One",
-      description: "Description of Project One",
+      title: "WebForger Studio",
+      description: "Started a web development business",
       image: "/images/project-one.jpg",
-      link: "https://example.com/project-one"
+      link: "https://webforger.net",
+      genre: genres["BS"]
     },
     {
-      title: "Project Two",
-      description: "Description of Project Two",
+      title: "Efficient Crypto Miner",
+      description: "Developed a method of mining crypto efficiently",
       image: "/images/project-two.jpg",
-      link: "https://example.com/project-two"
+      link: "https://github.com/project-two",
+      genre: genres["PER"]
     }
   ];
   $$result.css.add(css);
@@ -48,7 +58,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         title: project.title,
         description: project.description,
         image: project.image,
-        link: project.link
+        link: project.link,
+        genre: project.genre
       },
       {},
       {}
