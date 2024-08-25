@@ -1,10 +1,15 @@
 <script>
+    import { onMount } from 'svelte';
     import Footer from "../components/Footer.svelte";
     import Header from "../components/Header.svelte";
+    import { page } from '$app/stores';
     import "../app.css";
     let y;
     let innerWidth = 0;
     let innerHeight = 0;
+    let currentPage = '';
+
+    $: $page, currentPage = $page.url.pathname;
 
     function goTop() {
         document.body.scrollIntoView();
@@ -27,7 +32,9 @@
             <i class="fa-solid fa-arrow-up" />
         </button>
     </div>
-    <Header {y} {innerHeight}/>
+    {#if currentPage !== '/projects'}
+        <Header {y} {innerHeight}/>
+    {/if}
     <slot />
     <Footer />
 </div>
