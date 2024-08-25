@@ -110,7 +110,7 @@
             <p>Check out my GitHub</p>
         </a>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10">
-            <Step step={steps[0]} href="https://github.com/Jaspero">
+            <Step step={steps[0]} href="https://jaspero.co">
                 <p>
                     Jaspero is a  <strong
                         class="text-violet-400"
